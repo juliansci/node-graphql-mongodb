@@ -4,10 +4,11 @@ enum Level{
   advanced
 }
 
+
 type Course {
   _id: ID!
   title: String!
-  teacher: String
+  teacher: String 
   description: String!
   topic: String
   people: [Person]
@@ -24,7 +25,7 @@ type Student implements Person{
     _id: ID!
   name: String!
   email: String!
-  avatar: String
+  avatar: String @deprecated
 }
 type Professor implements Person {
     _id: ID!
